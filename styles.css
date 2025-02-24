@@ -83,6 +83,37 @@ main {
     margin-bottom: 15px;
 }
 
+.emotion-section {
+    background: #fff;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 35%;
+
+}
+
+    .emotion-section h2 {
+        font-size: 2.2em;
+        color: #222;
+        border-bottom: 3px solid #0073e6;
+        padding-bottom: 10px;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+.emotion-section li{
+    padding: 10px;
+}
+
+.emotion-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(1);
+}
 
 .project {
     background: #fff;

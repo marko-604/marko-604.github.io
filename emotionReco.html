@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Emotion-Recognition</title>
+    <link rel="stylesheet" href="emotion-style.css">
+
+</head>
+<body>
+
+
+    <header>
+        <h1>Emotion Recognition</h1>
+    </header>
+    <h1 class="heading">Model Iteration 1 <br /> <small>lr = 0.001</small></h1>
+    <div class="emotion-container">
+        <!--
+            <div class="emotion-section">
+
+                    <h2>Objectives</h2>
+                    <ul>
+                        <li>
+                            Create opportunities for product users to analyze behavioural responses from video, live
+                            or recorded.
+                        </li>
+                        <li>
+                            The product aims to simplify the process of “subject” feedback and provide
+                            developers, editors, and/or other users, with an extensive report of behavioural patterns
+                            at precise events/times.
+                        </li>
+                        <li>
+                            If integrated directly into the process which is being analyzed, trigger events can easily
+                            be implemented to quickly provide relevant information.
+                            ex) Before a boss fight, “trigger event” to provide the tracking program with a
+                            timestamp that it wants to analyze and see if developer visions match user reactions.
+                        </li>
+                    </ul>
+
+                </div>
+        -->
+        <div class="emotion-section">
+
+            <h2>Implementation Choices & Justifications</h2>
+
+
+            <h3>Data Augmentation</h3>
+            <ul>
+                <li><strong>RandomHorizontalFlip & RandomRotation:</strong> Improves generalization when detecting variations in facial orientation.</li>
+                <li><strong>Normalization ([0.5], [0.5]):</strong> Centers pixel values: fast and stable training.</li>
+            </ul>
+            <h3>Model Architecture</h3>
+            <ul>
+                <li><strong>Three Convolutional Layers</strong></li>
+                <li><strong>Batch Normalization:</strong> Stabilizes training and speeds up convergence.</li>
+                <li><strong>MaxPooling:</strong> Reduces spatial dimensions while retaining features.</li>
+                <li><strong>Dropout (0.2 - 0.3):</strong> Prevents overfitting by deactivating neurons randomly.</li>
+                <li><strong>Fully Connected Layers:</strong> Transforms features into class probabilities.</li>
+            </ul>
+            <h3>Training Setup</h3>
+            <ul>
+                <li><strong>Adam Optimizer (lr=0.001):</strong> Adaptive learning rate optimization.</li>
+                <li><strong>CrossEntropyLoss:</strong> Standard loss function.</li>
+                <li><strong>80/20 Train-Validation Split:</strong> Ensures proper validation.</li>
+            </ul>
+        </div>
+        <div class="emotion-section">
+
+            <h2>Potential Improvements for Better Accuracy</h2>
+
+            <h3>Data Improvements</h3>
+            <ul>
+                <li><strong>Increase Dataset Size</strong></li>
+            </ul>
+            <h3>Model Enhancements</h3>
+            <ul>
+                <li><strong>Deeper CNN with More Layers:</strong> Captures more complex features.</li>
+                <li><strong>Residual Connections (ResNet-like):</strong> Prevents vanishing gradients.</li>
+                <li><strong>Attention Mechanisms (SE Blocks):</strong> Focuses on key facial regions.</li>
+            </ul>
+
+            <h3>Training Optimization</h3>
+            <ul>
+                <li><strong>Use Pretrained Models (ResNet):</strong> Using Resnet-50 for example, gives 50 layers instead of the current 3.</li>
+                <li><strong>Increase Epoch Count</strong></li>
+            </ul>
+            <h3>Evaluation & Real-Time Adaptation</h3>
+            <ul>
+                <li><strong>Use a Confusion Matrix:</strong> Identifies misclassified emotions.</li>
+            </ul>
+
+
+        </div>
+
+
+
+
+        <div class="emotion-section">
+            <h2>Results</h2>
+            <img src="confusion_matrix_V1.png" alt="conf-matrix_V1" />
+            <h2>Conclusion</h2>
+            <ul>
+                <li>Innacurate, missing category and many wrongly classified. <br /> <strong>Best performing of personal models, issue could be in dropout.</strong> </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <h1 class="heading">Model Iteration 2 <br /> <small>lr = 0.001</small></h1>
+    <div class="emotion-container">
+        <div class="emotion-section">
+
+            <h2>Implementation Choices & Justifications</h2>
+            <h3>Data Augmentation</h3>
+            <ul>
+                <li> <strong>RandomAffine & ColorJitter: </strong> Allow different positions and enviroments to be accounted for</li>
+            </ul>
+            <h3>Model Architecture</h3>
+            <ul>
+                <li><strong>Four Convolutional Layers</strong></li>
+                <li><strong>Batch Normalization:</strong>Increased to 512 to account for 512 out_channels</li>
+                <li><strong>Output Features:</strong>Increased to 1024 features, which then get transformed into the desires 7 classes.</li>
+            </ul>
+
+            <h3>Training Setup</h3>
+            <ul>
+                <li><strong>Added Scheduler:</strong>Reduces the learning rate over time for better convergence</li>
+                <li><strong>Mixed Precision Training(FP16 Precision):</strong>Reduces memory usage and speed up training</li>
+            </ul>
+
+        </div>
+        <div class="emotion-section">
+
+            <h2>Potential Improvements for Better Accuracy</h2>
+            <ul>
+                <li><strong>Increase Dataset Size</strong></li>
+            </ul>
+
+            <h3>Model Enhancements</h3>
+            <ul>
+                <li><strong>Deeper CNN with More Layers:</strong> Mimic effects of Resnet-50 (50 layers)</li>
+            </ul>
+
+
+            <h3>Training Optimization</h3>
+            <ul>
+                <li><strong>Increase Learning Rate:</strong> Model seems to be getting stuck, changing from 0.001 to 0.01 might solve issues.</li>
+                <li><strong>Increase Epoch Count</strong></li>
+            </ul>
+        </div>
+
+        <div class="emotion-section">
+            <h2>Results</h2>
+            <img src="confusion_matrix_V2.png" alt="conf-matrix_v2" />
+            <h2>Conclusion</h2>
+            <ul>
+                <li>Innacurate, missing category and many wrongly classified </li>
+                <li>
+                    Epoch 1/30, Loss: 1.8412<br /> Epoch 30/30, Loss: 1.2524
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <h1 class="heading">Model Iteration 3 <br /> <small>lr = 0.001</small></h1>
+    <div class="emotion-container">
+        <div class="emotion-section">
+
+            <h2>Implementation Choices & Justifications</h2>
+            <h3>Data Augmentation</h3>
+            <ul>
+                <li> <strong> REMOVED RandomAffine & ColorJitter: </strong> Allow different positions and enviroments to be accounted for</li>
+            </ul>
+        
+
+            <h3>Training Setup</h3>
+            <ul>
+                <li><strong>REMOVED Scheduler:</strong>Reduces the learning rate over time for better convergence</li>
+            </ul>
+
+        </div>
+        <div class="emotion-section">
+
+            <h2>Potential Improvements for Better Accuracy</h2>
+            <ul>
+                <li><strong>Increase Dataset Size</strong></li>
+            </ul>
+
+            <h3>Model Enhancements</h3>
+            <ul>
+                <li><strong>Deeper CNN with More Layers</strong></li>
+            </ul>
+
+
+            <h3>Training Optimization</h3>
+            <ul>
+                <li><strong>Increase Epoch Count</strong></li>
+            </ul>
+        </div>
+
+        <div class="emotion-section">
+            <h2>Results</h2>
+            <img src="confusion_matrix_V3.png" alt="conf-matrix_v2" />
+            <h2>Conclusion</h2>
+            <ul>
+                <li>Innacurate, missing category and many wrongly classified<br /><strong>Better performance than Model 2</strong>  </li>
+                <li>
+                    Epoch 1/30, Loss: 1.8234  <br /> Epoch 30/30, Loss: 1.0549
+
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <h1 class="heading">ResNet-50 <br /> <small></small></h1>
+    <div class="emotion-container">
+        <div class="emotion-section">
+
+            <h2>Implementation Choices & Justifications</h2>
+            <h3>Training Setup</h3>
+            <ul>
+                <li><strong>30 Epochs</strong></li>
+                <li><strong>Learning Rate of 0.0003</strong></li>
+                <li><strong>Scheduler to reduce learning Rate every 5 epochs</strong></li>
+
+            </ul>
+
+        </div>
+        <div class="emotion-section">
+
+            <h2>Potential Improvements for Better Accuracy</h2>
+            <ul>
+                <li><strong>Increase Dataset Size</strong></li>
+            </ul>
+
+           
+            <h3>Training Optimization</h3>
+            <ul>
+                <li><strong>Increase Epoch Count</strong></li>
+                <li><strong>Augment Learning Rate</strong></li>
+            </ul>
+        </div>
+
+        <div class="emotion-section">
+            <h2>Results</h2>
+            <img src="confusion_matrix_ResNet50.png" alt="conf-matrix_ResNet50" />
+            <h2>Conclusion</h2>
+            <ul>
+                <li>Most accurate, 'disgust' category is now detected and mostly classified correctly.<br /><strong>Best Performance and will be used for future developments on this project.</strong>  </li>
+
+                <li>
+                    Epoch 1, Loss: 1.2738 <br />Epoch 30, Loss: 0.3963
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="return">
+
+        <a href="index.html">Return To Portfolio</a>
+
+
+    </div>
+
+    <!--<img src="sample-run.png" alt="faces" /> -->
+
+</body>
+</html>
