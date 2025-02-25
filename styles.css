@@ -45,14 +45,24 @@ main {
 }
 .project-section {
     margin-top: 50px;
-    width: 70%;
+    max-width: 63%;
     padding-left: 10%;
+
+}
+.project-grid{
+
+   display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adjust spacing between cards */
+    justify-content: center;
+
 
 }
 
 .secondary {
     margin-top: 50px;
-    width: 20%;
+
+    width: 30%;
 }
 
 .secondary h2 {
