@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\llm-integration.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:llm-integration.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emo-landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:emo-landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emotionReco.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:emotionReco.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\Emotion-Landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Emotion-Landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "llm-integration.html",
+              "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\llm-integration.html",
+              "RelativeDocumentMoniker": "llm-integration.html",
+              "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\llm-integration.html",
+              "RelativeToolTip": "llm-integration.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-26T15:24:38.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-07T20:19:48.471Z",
+              "WhenOpened": "2025-02-26T00:36:16.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Emotion-Landing.html",
+              "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\Emotion-Landing.html",
+              "RelativeDocumentMoniker": "Emotion-Landing.html",
+              "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\Emotion-Landing.html",
+              "RelativeToolTip": "Emotion-Landing.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T22:48:06.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\styles.css",
-              "RelativeDocumentMoniker": "styles.css",
-              "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\styles.css",
-              "RelativeToolTip": "styles.css",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAYwGAAAAAAAAAAAAAAAA==",
+              "Title": "emo-landing.css",
+              "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emo-landing.css",
+              "RelativeDocumentMoniker": "emo-landing.css",
+              "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emo-landing.css",
+              "RelativeToolTip": "emo-landing.css",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-01T16:52:27.366Z",
+              "WhenOpened": "2025-02-25T22:48:02.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "emotionReco.html",
+              "DocumentMoniker": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emotionReco.html",
+              "RelativeDocumentMoniker": "emotionReco.html",
+              "ToolTip": "C:\\Users\\m_mat\\Documents\\GitHub\\marko-604.github.io\\emotionReco.html",
+              "RelativeToolTip": "emotionReco.html",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAAABMBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T22:52:35.605Z",
               "EditorCaption": ""
             }
           ]

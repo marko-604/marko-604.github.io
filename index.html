@@ -3,167 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Marko Matijevic</title>
+    <meta name="description" content="Marko Matijevic's software development portfolio, featuring projects in machine learning, computer vision, Python, Java, and C++.">
+    <meta name="theme-color" content="#f7f7f5">
+    <title>Marko Matijevic | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Marko Matijevic</h1>
-        <h2>Coding Portoflio</h2>
-        <p><br />Showcasing my work in Python, Java, and C/C++</p>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="brand" href="#top" aria-label="Marko Matijevic, back to top">
+                <span class="brand-symbol" aria-hidden="true">M.</span>
+                <span>Marko Matijevic</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#work">Projects</a>
+                <a href="#about">About</a>
+                <a href="https://github.com/marko-604" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
-    <!-- <nav>
-        <ul>
-            <li><a href="#java-projects">Java</a></li>
-            <li><a href="#cpp-projects">C/C++</a></li>
-            <li><a href="#python-projects">Python</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>-->
+    <main id="main">
+        <section class="hero" aria-labelledby="intro-heading">
+            <div class="shell hero-layout">
+                <div class="hero-content">
+                    <p class="eyebrow eyebrow-light">Software development / Selected projects</p>
+                    <h1 id="intro-heading"><span class="hero-line">Building software</span> <span class="hero-line">across <span class="hero-highlight">AI, vision,</span></span> <span class="hero-line">and systems.</span></h1>
+                    <p class="hero-summary">
+                        I'm Marko Matijevic. I work on practical projects in machine learning,
+                        computer vision, and desktop software, using Python, Java, and C/C++.
+                    </p>
+                    <a class="button button-light" href="#work">Explore projects <span aria-hidden="true">↘</span></a>
+                </div>
 
-    <main>
-        <div class="project-container">
-            <section class="project-section">
-                <h2>Python Projects</h2>
-                <div class="Main-Projects">
-                    <div class="project">
-                        <h3>Emotion Recognition</h3>
-                        <h4>Completed - Expansion Ongoing</h4>
-                        <p>
-                            Developed a Python-based system for real-time emotion recognition, integrating a local LLM for advanced emotion analysis and interpretation.
-                            Utilized computer vision and deep learning techniques, training and fine-tuning a ResNet-50 model on a public Kaggle dataset to classify emotions 
-                            into seven categories. Leveraged OpenCV for facial detection and preprocessing, enabling dynamic analysis of emotional trends from webcam or video input.
-                            Designed for applications in user experience analysis, gameplay behavior tracking, and interactive AI-driven feedback systems.
+                <aside class="hero-details" aria-label="Areas of focus">
+                    <p class="hero-details-label">Areas of focus</p>
+                    <ul>
+                        <li><span>01</span> Machine learning</li>
+                        <li><span>02</span> Computer vision</li>
+                        <li><span>03</span> Systems &amp; tools</li>
+                    </ul>
+                    <p class="hero-details-footnote">Python <span>/</span> Java <span>/</span> C &amp; C++</p>
+                </aside>
+            </div>
+        </section>
 
-                        </p>
-                        <a href="https://github.com/marko-604/Emotion-Recognition" target="_blank">GitHub Repository</a>
-                        <a href="Emotion-Landing.html">In-Depth Project Explanation </a>
+        <section class="work-section shell" id="work" aria-labelledby="work-heading">
+            <div class="section-intro">
+                <div>
+                    <p class="eyebrow">01 / Portfolio</p>
+                    <h2 id="work-heading">Selected work<span class="period">.</span></h2>
+                </div>
+                <p>A selection of completed projects, active builds, and technical experiments.</p>
+            </div>
 
-
+            <article class="featured-project" aria-labelledby="featured-title">
+                <div class="feature-copy">
+                    <div class="project-meta">
+                        <span class="project-type">Featured project · Python</span>
+                        <span class="project-status">Expanding</span>
                     </div>
-
-                    <div class="project">
-                        <h3>CV Training Assistant</h3>
-                        <h4>Early Development</h4>
-                        <p>
-                            The Computer Vision Training Assistant is a tool that will be used by novice gym-goers, to help them understand the correct form for exercises.
-                            The tool will use a webcam or existing video to track the user's body movements and provide real-time feedback on their form.
-                            The tool will also provide a summary of the user's workout, including the number of reps and sets completed, and possibly the amount of weight lifted.<br /><br /><br /><br />
-
-                        </p>
-                        <a href="https://github.com/marko-604/TrainingAssistant" target="_blank">GitHub Repository</a>
-
+                    <h3 id="featured-title">Emotion Recognition</h3>
+                    <p class="feature-lead">
+                        Real-time facial expression classification, with local language-model
+                        integration for interpreting patterns over time.
+                    </p>
+                    <p class="feature-description">
+                        Trained and evaluated a ResNet-50 classifier on seven expression categories,
+                        using OpenCV for video-based face detection and preprocessing. Integrated
+                        Mistral through Ollama for local analysis of prediction trends.
+                    </p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>Python</li>
+                        <li>ResNet-50</li>
+                        <li>OpenCV</li>
+                        <li>Ollama</li>
+                    </ul>
+                    <div class="feature-stats" aria-label="Model results">
+                        <div><strong>68.81%</strong><span>Reported accuracy</span></div>
+                        <div><strong>07</strong><span>Expression classes</span></div>
                     </div>
-
-
-                    <div class="project">
-                        <h3>
-                            CNN Modelling for X-ray classification with
-                            Tensorflow
-                        </h3>
-                        <h4>Completed</h4>
-
-                        <p>
-                            Analyzed a dataset of 4 features which include
-                            around 10,000 sample images each, and produced
-                            an output of 98% accuracy for splitting the set
-                            into 70-30 training-testing categories. The project
-                            required accurate feature implementation of
-                            convolutional layers and pooling. Results are shown
-                            accurately using Matplotlib tools.<br /><br />
-                        </p>
-                        <a href="https://github.com/marko-604/CNN-Modelling-for-X-ray-classification-with-Tensorflow" target="_blank">GitHub Repository</a>
+                    <div class="feature-actions">
+                        <a class="button button-dark" href="Emotion-Landing.html">Project details <span aria-hidden="true">↗</span></a>
+                        <a class="inline-link" href="https://github.com/marko-604/Emotion-Recognition" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
                     </div>
+                </div>
 
-                    <div class="project">
-                        <h3>‘Mines’ Gambling Analyzer Tool</h3>
-                        <h4>Completed</h4>
-                        <p>
-                            This tool includes the automation of playing mock games of ‘Mines’, to collect data as to whether or not likelyhoods are accurately implemented.
-                            The tool uses automated mouse control, and image recognition to determine which event is occurring. Saving it to a file to be analyzed, by an assistant script.
-                            Ultimately, the purpose is to determine whether the gambling site has patterns of its own and learn about how such processes are used to manipulate its users.<br /><br />
-                        </p>
-                        <a href="https://github.com/marko-604/AutomaticMiningTool" target="_blank">GitHub Repository</a>
+                <figure class="feature-figure">
+                    <div class="figure-label"><span>Model evaluation</span><span>ResNet-50 / Confusion matrix</span></div>
+                    <img src="confusion_matrix_ResNet50.png" alt="Confusion matrix showing ResNet-50 classification results across seven facial expression categories, with an overall accuracy of 68.81 percent." width="760" height="570" loading="eager">
+                    <figcaption>Per-class predictions from the evaluated ResNet-50 model.</figcaption>
+                </figure>
+            </article>
 
-                    </div>
+            <section class="project-group" aria-labelledby="python-heading">
+                <div class="group-heading">
+                    <h3 id="python-heading">Python <span class="group-count">/ 04</span></h3>
+                    <span class="group-subtitle">Machine learning &amp; automation</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="card-meta"><span>01 / Computer vision</span><span>Early development</span></div>
+                        <h4>CV Training Assistant</h4>
+                        <p>A webcam and video-based exercise coach in development, designed to track movements, offer form feedback, and summarize sets and repetitions.</p>
+                        <div class="card-bottom"><span>Python · Computer vision</span><a href="https://github.com/marko-604/TrainingAssistant" target="_blank" rel="noopener noreferrer" aria-label="CV Training Assistant GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
 
-                    <div class="project">
-                        <h3>User Productivity Tool</h3>
-                        <h4>In-Progress</h4>
-                        <p>
-                            Development of a dataset-collecting program, which will
-                            extract user data from their currently open processes.
-                            Utilization of machine learning technology to understand
-                            and predict user behaviour based on trends for
-                            suggestions on managing productivity. The output that
-                            can be pasted into an LLM for prompting suggestions
-                            will be provided by the tool.
-                        </p>
-                        <a href="https://github.com/marko-604/Window_TrackingProject_MPP-s" target="_blank">GitHub Repository</a>
+                    <article class="project-card">
+                        <div class="card-meta"><span>02 / Deep learning</span><span>Completed</span></div>
+                        <h4>X-ray Classification CNN</h4>
+                        <p>A TensorFlow convolutional network for four-class X-ray image classification. Reported 98% accuracy using a 70/30 training and testing split.</p>
+                        <div class="card-bottom"><span>Python · TensorFlow</span><a href="https://github.com/marko-604/CNN-Modelling-for-X-ray-classification-with-Tensorflow" target="_blank" rel="noopener noreferrer" aria-label="X-ray Classification CNN GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
 
-                    </div>
-<br />
+                    <article class="project-card">
+                        <div class="card-meta"><span>03 / Automation</span><span>Completed</span></div>
+                        <h4>‘Mines’ Game Analyzer</h4>
+                        <p>Automates mock games of Mines using mouse control and image recognition, collecting outcomes for a separate script to analyze possible patterns.</p>
+                        <div class="card-bottom"><span>Python · Image recognition</span><a href="https://github.com/marko-604/AutomaticMiningTool" target="_blank" rel="noopener noreferrer" aria-label="Mines Game Analyzer GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-meta"><span>04 / Productivity</span><span>In progress</span></div>
+                        <h4>User Productivity Tool</h4>
+                        <p>An ongoing project to collect application-usage data, identify behavioral trends, and prepare summaries that can support LLM-assisted recommendations.</p>
+                        <div class="card-bottom"><span>Python · Data analysis</span><a href="https://github.com/marko-604/Window_TrackingProject_MPP-s" target="_blank" rel="noopener noreferrer" aria-label="User Productivity Tool GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
                 </div>
             </section>
 
-            <div class="secondary">
-                <!-- Java Projects Section -->
-                    <h2>Java Projects</h2>
-                    <div class="project-grid">
-                        <div class="project">
-                            <h3>Calculator +</h3>
-                            <h4>Complete</h4>
-                            <p>
-                                Developing a functional scientific calculator using Java's AWT.
-                                The application provides standard arithmetic operations, as well as modulo, square root,
-                                sine, cosine, exponentiation (a^b).<br /><br /><br /><br /><br /><br />
-                            </p>
-                            <a href="https://github.com/marko-604/Calculator_Plus" target="_blank">GitHub Repository</a>
-                        </div>
-                        <div class="project">
-                            <h3>Password Manager</h3>
-                            <h4>In-Progress</h4>
+            <section class="project-group" aria-labelledby="java-heading">
+                <div class="group-heading">
+                    <h3 id="java-heading">Java <span class="group-count">/ 02</span></h3>
+                    <span class="group-subtitle">Desktop applications</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="card-meta"><span>05 / Utilities</span><span>Completed</span></div>
+                        <h4>Calculator +</h4>
+                        <p>A desktop scientific calculator built with Java AWT, supporting standard arithmetic, modulo, square roots, trigonometric functions, and powers.</p>
+                        <div class="card-bottom"><span>Java · AWT</span><a href="https://github.com/marko-604/Calculator_Plus" target="_blank" rel="noopener noreferrer" aria-label="Calculator Plus GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
 
-                            <p>
-                                Developed a Java-based password manager with AES encryption to securely store and retrieve credentials.
-                                Implemented a user-friendly GUI for seamless credential management. Features include secure key storage,
-                                input validation, duplicate prevention, and real-time password retrieval.<br /><br /><br />
-                            </p>
-                            <a href="https://github.com/marko-604/PasswordManager" target="_blank">GitHub Repository</a>
-                        </div>
-                    </div>
+                    <article class="project-card">
+                        <div class="card-meta"><span>06 / Security</span><span>In progress</span></div>
+                        <h4>Password Manager</h4>
+                        <p>A Java desktop password manager using AES encryption, with a GUI for credential storage and retrieval, input validation, and duplicate prevention.</p>
+                        <div class="card-bottom"><span>Java · AES encryption</span><a href="https://github.com/marko-604/PasswordManager" target="_blank" rel="noopener noreferrer" aria-label="Password Manager GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
+                </div>
+            </section>
 
-                <!-- C/C++ Projects Section -->
-                    <h2>C/C++ Projects</h2>
-                    <div class="project-grid">
-                        <div class="project">
-                            <h3>Mini-Game Hub (C++)</h3>
-                            <h4>In-Progress</h4>
-                            <p>
-                                The Mini-Game Hub is a desktop app with a user-friendly GUI that lets players choose from
-                                multiple mini-games, currently including Snake, Tic Tac Toe, and Number Guessing.
-                            </p>
-                            <a href="https://github.com/marko-604/Mini-Game-Hub" target="_blank">GitHub Repository</a>
-                        </div>
+            <section class="project-group" aria-labelledby="cpp-heading">
+                <div class="group-heading">
+                    <h3 id="cpp-heading">C / C++ <span class="group-count">/ 02</span></h3>
+                    <span class="group-subtitle">Applications &amp; systems</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="card-meta"><span>07 / Games</span><span>In progress</span></div>
+                        <h4>Mini-Game Hub</h4>
+                        <p>A C++ desktop collection of small games, including Snake, Tic-Tac-Toe, and Number Guessing, with a central interface for launching each one.</p>
+                        <div class="card-bottom"><span>C++ · Game development</span><a href="https://github.com/marko-604/Mini-Game-Hub" target="_blank" rel="noopener noreferrer" aria-label="Mini-Game Hub GitHub repository">Repository <span aria-hidden="true">↗</span></a></div>
+                    </article>
 
-                        <div class="project">
-                            <h3>Auto-Focus Aid (C++)</h3>
-                            <h4>In-Progress</h4>
-                            <p>
-                                Built a multithreaded Windows tool that monitors system processes in real time and automatically terminates selected executables. Implemented a custom rule engine, delta-based process detection, a thread-safe event queue, and separate scanner/worker threads. Provided an interactive CLI for enabling/disabling blocking and inspecting runtime statistics. Designed for stability, low overhead, and safe thread coordination using atomics, mutexes, and condition variables.
-                            </p>
-                        </div>
-                    </div>
+                    <article class="project-card">
+                        <div class="card-meta"><span>08 / Systems</span><span>In progress</span></div>
+                        <h4>Auto-Focus Aid</h4>
+                        <p>A multithreaded Windows process monitor with configurable blocking rules, a thread-safe event queue, and a CLI for control and runtime statistics.</p>
+                        <div class="card-bottom"><span>C++ · Concurrency · Windows</span><span class="no-link">Repository not listed</span></div>
+                    </article>
+                </div>
+            </section>
+        </section>
 
+        <section class="about-section" id="about" aria-labelledby="about-heading">
+            <div class="shell about-layout">
+                <div>
+                    <p class="eyebrow">02 / About</p>
+                    <h2 id="about-heading">A bit about<br>my approach<span class="period">.</span></h2>
+                </div>
+                <div class="about-copy">
+                    <p>I enjoy working across different layers of software: from training a model and evaluating its results to building the tools and interfaces around it.</p>
+                    <p>This portfolio documents what I've built, what I'm improving, and the engineering choices behind each project.</p>
+                    <a class="inline-link" href="https://github.com/marko-604" target="_blank" rel="noopener noreferrer">More work on GitHub <span aria-hidden="true">↗</span></a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Marko Matijevic - All Rights Reserved</p>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <p>© 2026 Marko Matijevic</p>
+            <a href="#top">Back to top ↑</a>
+        </div>
     </footer>
 </body>
 </html>
